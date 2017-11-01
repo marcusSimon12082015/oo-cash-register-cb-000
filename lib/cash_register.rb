@@ -10,8 +10,10 @@ class CashRegister
       @total +=price
     else
       @total += (price * quantity)
+      quantity.times{
+        @@items << title
+      }
     end
-    @@items << title*quantity
   end
 
   def items
