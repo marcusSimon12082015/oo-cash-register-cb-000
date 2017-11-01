@@ -13,6 +13,11 @@ class CashRegister
     end
     @@items << title
   end
+
+  def items
+    @@items
+  end
+
   def apply_discount
     return_message = ""
     if discount == 0
