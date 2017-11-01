@@ -15,5 +15,6 @@ class CashRegister
   def apply_discount
     calculated = (total*discount)/100
     @total -= calculated
+    puts "After the discount, the total comes to #{@total}."
   end
 end
