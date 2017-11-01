@@ -11,7 +11,7 @@ class CashRegister
     else
       @total += (price * quantity)
     end
-    @@items << title
+    @@items << title*quantity
   end
 
   def items
